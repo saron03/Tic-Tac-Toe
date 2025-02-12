@@ -1,0 +1,131 @@
+*{
+    background-color:navajowhite;
+}
+
+body{
+    font-family: "Permanent Marker";
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.container{
+   
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-content: center;
+}
+
+:root{
+    --size:100px;
+}
+
+.box{
+    width: var(--size);
+    height: var(--size);
+    border: 1px solid black;
+    background-color:white;
+    box-shadow: 0 0 0 1px;
+    cursor: pointer;
+    font-size: calc(var(--size) * .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.status{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight:normal;
+}
+
+.restart {
+    margin: 30px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    color: #333; 
+    border: 2px solid #333; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+}
+
+.restart:hover {
+    background-color:wheat; 
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+
+.name-inputs {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.name-inputs input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.name-inputs button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.name-inputs button:hover {
+    background-color: #ddd;
+}
+
+
+.scoreO,
+.scoreX{
+    background-color: white;
+    border: 2px solid black;
+    height: 30px;
+}
+
+.scoreText{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.new{
+    margin: 30px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    color: #333; 
+    border: 2px solid #333; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+}
+
+.new:hover{
+    background-color:wheat; 
+    cursor: pointer;
+    transform: translateY(-3px);
+}
